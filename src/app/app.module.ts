@@ -5,9 +5,13 @@ import { RouteReuseStrategy } from '@angular/router';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { StreamingMedia } from '@ionic-native/streaming-media/ngx';
+import { Media } from '@ionic-native/media/ngx';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +20,9 @@ import { AppComponent } from './app.component';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    StreamingMedia,
+    Media
   ],
   bootstrap: [AppComponent]
 })

@@ -1,7 +1,8 @@
 {
   "name": "experiencia-boliche",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
