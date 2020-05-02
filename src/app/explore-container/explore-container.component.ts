@@ -16,7 +16,7 @@ export class ExploreContainerComponent implements OnInit {
         'Aumentá el brillo de tu pantalla',
         'Apagá las luces',
         'Acercá la pantalla de tu teléfono a tus ojos',
-        'Disfruta la Experiencia Boliche!'
+        'Disfrutá la Experiencia Boliche!'
     ];
   }
 

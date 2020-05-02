@@ -11,6 +11,7 @@ import { Media } from '@ionic-native/media/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {AdMobFree} from "@ionic-native/admob-free";
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AppComponent } from './app.component';
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     StreamingMedia,
-    Media
+    Media,
+    AdMobFree
   ],
   bootstrap: [AppComponent]
 })
