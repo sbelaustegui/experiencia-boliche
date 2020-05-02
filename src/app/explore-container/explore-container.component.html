@@ -1,4 +1,12 @@
 <div id="container">
+  <div class="icon-container">
+    <ion-icon class="headset-icon" name="headset-outline"></ion-icon>
+  </div>
   <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="items">
+    <div class="item" *ngFor="let item of items; let i = index;">
+      <p>{{i + 1}}</p>
+      <p>{{item}}</p>
+    </div>
+  </div>
 </div>

@@ -13,5 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-button [disabled]="startDisabled" (click)="startRecording()">
+    Grabar
+  </ion-button>
+  <ion-button [disabled]="stopDisabled" (click)="stopRecording()">
+    Detener
+  </ion-button>
+
 </ion-content>
