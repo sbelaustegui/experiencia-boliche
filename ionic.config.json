@@ -1,0 +1,7 @@
+{
+  "name": "experiencia-boliche",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
