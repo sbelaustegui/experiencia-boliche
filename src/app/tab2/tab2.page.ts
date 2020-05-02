@@ -36,8 +36,6 @@ export class Tab2Page implements OnInit {
 
       if (this.platform.is('hybrid')) {
         const bannerConfig: AdMobFreeBannerConfig = {
-          // add your config here
-          // for the sake of this example we will just use the test config
           id: 'ca-app-pub-6326566524185956/6552298156',
           isTesting: false,
           autoShow: true
@@ -46,8 +44,7 @@ export class Tab2Page implements OnInit {
 
         this.admobFree.banner.prepare()
             .then(() => {
-              // banner Ad is ready
-              // if we set autoShow to false, then we will need to call the show method here
+              this.admobFree.banner.show();
             })
             .catch(e => console.log(e));
       }
