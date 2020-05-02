@@ -10,7 +10,14 @@ export class ExploreContainerComponent implements OnInit {
   items = [];
 
   constructor() {
-    this.items = ['Conectá tus auriculares', 'Subí el volumen', 'Aumentá el brillo de tu pantalla', 'Apagá las luces', 'Poné tu telefono de pantalla cerca de tus ojos', 'Disfruta la Experiencia Boliche!'];
+    this.items = [
+        'Conectá tus auriculares',
+        'Subí el volumen',
+        'Aumentá el brillo de tu pantalla',
+        'Apagá las luces',
+        'Acercá la pantalla de tu teléfono a tus ojos',
+        'Disfruta la Experiencia Boliche!'
+    ];
   }
 
   ngOnInit() {}
