@@ -34,39 +34,7 @@ export class Tab2Page implements OnInit {
       errorCallback: () => {this.result = 'error'},
       orientation:'landscape'
     }
-    this.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/danceMonkey.mp4',options);
+    this.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/partusa.mov',options);
   }
-
-  startAudio(){
-    this.startDisabled = true;
-    this.stopDisabled = false;
-
-    this.file = this.media.create("https://expbnn.s3.amazonaws.com/TONES+AND+I+-+DANCE+MONKEY+(8D+AUDIO).mp3");
-
-    this.file.onStatusUpdate.subscribe(status => console.log(status)); // fires when file status changes
-
-    this.file.onSuccess.subscribe(() => this.result = 'Action is successful');
-
-    this.file.onError.subscribe(error => this.result = 'Error!');
-
-    this.file.play();
-
-    setInterval(() => {
-      this.file.getCurrentPosition().then((data) => this.result = data);
-    }, 1000);
-    
-
-  }
-
-  pauseAudio() {
-    this.startDisabled = false;
-    this.stopDisabled = true;
-    this.file.stop();
-
-    this.file.release();
-  }
-  
-
-
 
 }
