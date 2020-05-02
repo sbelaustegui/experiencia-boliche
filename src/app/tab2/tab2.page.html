@@ -23,4 +23,11 @@
   <br/>
   <ion-label color="primary">{{result}}</ion-label>
 
+  <div *ngIf="webVideo.show">
+  <h2>Web</h2>
+    <video [crossOrigin]="'anonymous'" [autoplay]="true" [muted]="false">
+      <source [src]="webVideo.src" type="video/mp4">
+    </video>
+  </div>
+
 </ion-content>

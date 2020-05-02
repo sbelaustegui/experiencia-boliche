@@ -17,6 +17,8 @@ export class Tab2Page implements OnInit {
   file:MediaObject;
   startDisabled = false;
   stopDisabled = true;
+  webVideo = {show: false, src: ''};
+
   constructor(private platform: Platform, private splashScreen: SplashScreen, 
     private media: Media,private statusBar: StatusBar, private streamingMedia: StreamingMedia) { }
 
@@ -29,12 +31,19 @@ export class Tab2Page implements OnInit {
   }
 
   startVideo(){
-    let options: StreamingVideoOptions ={
-      successCallback: () => {this.result = 'exito'},
-      errorCallback: () => {this.result = 'error'},
-      orientation:'landscape'
-    }
-    this.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/partusa.mov',options);
+    this.platform.ready().then(() => {
+      if (this.platform.is('hybrid')) {
+        let options: StreamingVideoOptions ={
+          successCallback: () => {this.result = 'exito'},
+          errorCallback: () => {this.result = 'error'},
+          orientation:'landscape'
+        }
+        this.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/partusa.mov',options);
+      } else {
+          this.webVideo.show = true;
+          this.webVideo.src = 'https://expbnn.s3.amazonaws.com/partusa.mov';
+      }
+    });
   }
 
 }
