@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { StreamingMedia, StreamingAudioOptions } from '@ionic-native/streaming-media/ngx';
+import { StreamingMedia, StreamingAudioOptions, StreamingVideoOptions } from '@ionic-native/streaming-media/ngx';
 import { Media, MediaObject } from '@ionic-native/media/ngx';
 
 
@@ -17,7 +17,8 @@ export class Tab2Page implements OnInit {
   file:MediaObject;
   startDisabled = false;
   stopDisabled = true;
-  constructor(private platform: Platform, private splashScreen: SplashScreen, private media: Media,private statusBar: StatusBar, private streamingMedia: StreamingMedia) { }
+  constructor(private platform: Platform, private splashScreen: SplashScreen, 
+    private media: Media,private statusBar: StatusBar, private streamingMedia: StreamingMedia) { }
 
   ngOnInit() {
     this.platform.ready().then(() => {
@@ -27,6 +28,14 @@ export class Tab2Page implements OnInit {
     });
   }
 
+  startVideo(){
+    let options: StreamingVideoOptions ={
+      successCallback: () => {this.result = 'exito'},
+      errorCallback: () => {this.result = 'error'},
+      orientation:'landscape'
+    }
+    this.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/danceMonkey.mp4',options);
+  }
 
   startAudio(){
     this.startDisabled = true;
