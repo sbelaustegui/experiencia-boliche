@@ -5,7 +5,6 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media/ngx';
 import { Media, MediaObject } from '@ionic-native/media/ngx';
 import { LoadingController } from '@ionic/angular';
-import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free/ngx';
 
 @Component({
   selector: 'app-tab2',
@@ -26,28 +25,12 @@ export class Tab2Page implements OnInit {
   constructor(private platform: Platform, private splashScreen: SplashScreen, 
               private media: Media,private statusBar: StatusBar,
               private streamingMedia: StreamingMedia,
-              public loadingController: LoadingController,
-              private admobFree: AdMobFree) { }
+              public loadingController: LoadingController) { }
 
   ngOnInit() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-
-      if (this.platform.is('hybrid')) {
-        const bannerConfig: AdMobFreeBannerConfig = {
-          id: 'ca-app-pub-6326566524185956/6552298156',
-          isTesting: false,
-          autoShow: true
-        };
-        this.admobFree.banner.config(bannerConfig);
-
-        this.admobFree.banner.prepare()
-            .then(() => {
-              this.admobFree.banner.show();
-            })
-            .catch(e => console.log(e));
-      }
     });
     this.getList();
   }
