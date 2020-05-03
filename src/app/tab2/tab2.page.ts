@@ -5,6 +5,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media/ngx';
 import { Media, MediaObject } from '@ionic-native/media/ngx';
 import { LoadingController } from '@ionic/angular';
+import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free/ngx';
 
 @Component({
   selector: 'app-tab2',
@@ -25,15 +26,35 @@ export class Tab2Page implements OnInit {
   constructor(private platform: Platform, private splashScreen: SplashScreen, 
               private media: Media,private statusBar: StatusBar,
               private streamingMedia: StreamingMedia,
-              public loadingController: LoadingController) { }
+              public loadingController: LoadingController,private admobFree: AdMobFree) { }
 
   ngOnInit() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-    });
-    this.getList();
-  }
+   
+    
+    if (this.platform.is('hybrid')) {
+      const bannerConfig: AdMobFreeBannerConfig = {
+        // add your config here
+        // for the sake of this example we will just use the test config
+        id: 'ca-app-pub-6326566524185956/6552298156',
+        isTesting: false,
+        autoShow: true
+      };
+      this.admobFree.banner.config(bannerConfig);
+
+      this.admobFree.banner.prepare()
+          .then(() => {
+            // banner Ad is ready
+            // if we set autoShow to false, then we will need to call the show method here
+            this.admobFree.banner.show();
+          })
+          .catch(e => console.log(e));
+    }
+  });
+  this.getList();
+}
 
   startVideo(id){
     let selectedVideo = this.videos.find(video => video.ETag === id).Key;
