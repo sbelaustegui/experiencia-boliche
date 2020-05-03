@@ -3,6 +3,9 @@ import { Component } from '@angular/core';
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { Plugins } from "@capacitor/core";
+
+const { AdMob } = Plugins;
 
 @Component({
   selector: 'app-root',
@@ -15,6 +18,7 @@ export class AppComponent {
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
   ) {
+    AdMob.initialize('ca-app-pub-6326566524185956~8248523202');
     this.initializeApp();
   }
 

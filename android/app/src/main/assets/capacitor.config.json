@@ -1,8 +1,0 @@
-{
-  "appId": "com.experiencia.boliche",
-  "appName": "experiencia-boliche",
-  "bundledWebRuntime": false,
-  "npmClient": "npm",
-  "webDir": "www",
-  "cordova": {}
-}

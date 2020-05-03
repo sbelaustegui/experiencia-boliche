@@ -5,7 +5,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media/ngx';
 import { Media, MediaObject } from '@ionic-native/media/ngx';
 import { LoadingController } from '@ionic/angular';
-import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free/ngx';
+import { Plugins } from "@capacitor/core";
+import { AdOptions, AdSize, AdPosition } from "capacitor-admob";
+
+const { AdMob } = Plugins;
 
 @Component({
   selector: 'app-tab2',
@@ -23,10 +26,17 @@ export class Tab2Page implements OnInit {
   regex = RegExp(/_/g);
   videos;
 
+  options: AdOptions = {
+    adId: 'ca-app-pub-6326566524185956/6552298156',
+    adSize: AdSize.FULL_BANNER,
+    position: AdPosition.BOTTOM_CENTER,
+    hasTabBar: true,
+  };
+
   constructor(private platform: Platform, private splashScreen: SplashScreen, 
               private media: Media,private statusBar: StatusBar,
               private streamingMedia: StreamingMedia,
-              public loadingController: LoadingController,private admobFree: AdMobFree) { }
+              public loadingController: LoadingController) { }
 
   ngOnInit() {
     this.platform.ready().then(() => {
@@ -35,22 +45,14 @@ export class Tab2Page implements OnInit {
    
     
     if (this.platform.is('hybrid')) {
-      const bannerConfig: AdMobFreeBannerConfig = {
-        // add your config here
-        // for the sake of this example we will just use the test config
-        id: 'ca-app-pub-6326566524185956/6552298156',
-        isTesting: false,
-        autoShow: true
-      };
-      this.admobFree.banner.config(bannerConfig);
-
-      this.admobFree.banner.prepare()
-          .then(() => {
-            // banner Ad is ready
-            // if we set autoShow to false, then we will need to call the show method here
-            this.admobFree.banner.show();
-          })
-          .catch(e => console.log(e));
+      AdMob.showBanner(this.options).then(
+          value => {
+            console.log(value); // true
+          },
+          error => {
+            console.error(error); // show error
+          }
+      );
     }
   });
   this.getList();
