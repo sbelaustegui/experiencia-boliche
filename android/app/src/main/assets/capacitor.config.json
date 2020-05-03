@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.experiencia.boliche",
   "appName": "experiencia-boliche",
   "bundledWebRuntime": false,
   "npmClient": "npm",
