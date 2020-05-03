@@ -22,6 +22,14 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      // Check dark mode
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      this.toggleDarkTheme(prefersDark.matches);
+      prefersDark.addEventListener("change",(mediaQuery) => this.toggleDarkTheme(mediaQuery.matches));
     });
+  }
+
+  toggleDarkTheme(shouldAdd) {
+    document.body.classList.toggle('dark', shouldAdd);
   }
 }
