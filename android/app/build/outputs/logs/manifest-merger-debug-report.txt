@@ -1,0 +1,553 @@
+-- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:35:9-43:20
+	android:grantUriPermissions
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:39:13-47
+	android:authorities
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:37:13-64
+	android:exported
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:36:13-62
+manifest
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:1-64:12
+MERGED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-36:12
+MERGED from [com.google.android.material:material:1.1.0-rc02] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/7c8b56af2739c0925a2a64d645abbbbf/material-1.1.0-rc02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6c5a1a33c151bf1b1b969a4997bc8337/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-29:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/8a144bf192d6484f4ce6240d7fa27967/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/130b3e7299d7b916415d9bf24d660e86/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:17:1-44:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a03af0ca606b0afbfb3b2e724fbbb37f/jetified-play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:15:1-39:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/69bb246ee492a12aa1da92077170be77/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a3baafcd43ce1780d3430833b197fb13/jetified-firebase-installations-interop-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9f753adbd07fbe4faac50d5081095fbc/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a4ddce84ad54f04bc0ddf2acdb2f05d4/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/f2ad40b7824eb372f4d8a9636d7e3bf4/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b2250d6351df54d89fb411725865672d/jetified-play-services-stats-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/33864422152bb0af748686115ae1452a/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/0a5d1ddc01de78a90b6c8d414c9a6e9c/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/43eb2d2e7e68e27bf73363f2db15d7be/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2e61fb9847d1e63c42925674ddfb4e03/browser-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/0e9d2ae9f4afac9ea1a0a04f8350196c/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/80dd1dc019436116365faa921b9a8769/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d3e38a4ee70dd28ca131c75161280cc6/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c99f94f95913e12a34477cc68c241232/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/51d331fcd57936d004e0494487c5a706/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/e28f2eab0eeac32ad77aa73d51ae8294/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/558f92460b4271919299f451301533e5/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d4b67913328dae4e98aac9b3260d763c/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/fdcb254cec2eda61cf9d0e6a91c1273a/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3981cec19a17bddac768d603ddda69c3/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c6f4260131458ccd0b15b1a20cb8065e/core-1.2.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b3eceaf6e5cc2df4bb865a5445be6293/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/fef3bcbc3f86e0f441f90d2d23ba3f3b/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/923cd97b32caebf2e6b5629d421a10e9/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9f8a366e57dff09c00193bb4b84f0896/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/debd70e42d2284fe791e96c9c76092fa/jetified-firebase-components-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/f8da0049cbd1626250518b3b67a8e32e/jetified-firebase-encoders-json-16.0.0/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/10c582a6c9d10d357ca6c4650e6b6d1c/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/40211b48e1fd6597c46fa7fb3bdc27f4/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a2ae4022237bbaf198d3d05422530051/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/744e890fd9c2229fd55f0f204e895827/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/72cbc39fa25a246d7e646058ccbab8e7/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a19056003d7a5f2bc9cc665fd561b346/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/4b17712f17b32f24acf8ec9de6f31f74/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b6f43387dd7e9eafec00725aa0944ecc/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [org.apache.cordova:framework:7.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/cdc4ca6299b385d01030eff7fbf348bd/jetified-framework-7.0.0/AndroidManifest.xml:20:1-27:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/ab078fb7568ac501da448e6ef758105a/jetified-transport-api-2.2.0/AndroidManifest.xml:15:1-22:12
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:1-64:12
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:1-64:12
+	package
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:3:5-31
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:1-64:12
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:1-64:12
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:5:5-44:19
+MERGED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-34:19
+MERGED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-34:19
+MERGED from [com.google.android.material:material:1.1.0-rc02] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/7c8b56af2739c0925a2a64d645abbbbf/material-1.1.0-rc02/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.1.0-rc02] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/7c8b56af2739c0925a2a64d645abbbbf/material-1.1.0-rc02/AndroidManifest.xml:22:5-20
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-27:19
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:5-27:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:22:5-42:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:22:5-42:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a03af0ca606b0afbfb3b2e724fbbb37f/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a03af0ca606b0afbfb3b2e724fbbb37f/jetified-play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:25:5-37:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/69bb246ee492a12aa1da92077170be77/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/69bb246ee492a12aa1da92077170be77/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9f753adbd07fbe4faac50d5081095fbc/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9f753adbd07fbe4faac50d5081095fbc/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a4ddce84ad54f04bc0ddf2acdb2f05d4/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a4ddce84ad54f04bc0ddf2acdb2f05d4/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/f2ad40b7824eb372f4d8a9636d7e3bf4/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/f2ad40b7824eb372f4d8a9636d7e3bf4/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b2250d6351df54d89fb411725865672d/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b2250d6351df54d89fb411725865672d/jetified-play-services-stats-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c6f4260131458ccd0b15b1a20cb8065e/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c6f4260131458ccd0b15b1a20cb8065e/core-1.2.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/fef3bcbc3f86e0f441f90d2d23ba3f3b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/fef3bcbc3f86e0f441f90d2d23ba3f3b/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:25:5-39:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c6f4260131458ccd0b15b1a20cb8065e/core-1.2.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:12:9-40
+	android:usesCleartextTraffic
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:11:9-44
+activity#io.ionic.starter.MainActivity
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:14:9-33:20
+	android:label
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:17:13-56
+	android:launchMode
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:19:13-44
+	android:configChanges
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:15:13-129
+	android:theme
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:18:13-62
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:16:13-57
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:21:13-24:29
+action#android.intent.action.MAIN
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:23:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/custom_url_scheme
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:26:13-31:29
+action#android.intent.action.VIEW
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:28:17-76
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:28:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:29:17-78
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:29:27-75
+data
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:30:17-68
+	android:scheme
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:30:23-65
+uses-permission#android.permission.INTERNET
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:48:5-67
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-67
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:5-67
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:48:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:50:5-79
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:50:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:51:5-81
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-81
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:51:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:53:5-81
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:53:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:54:5-79
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:54:22-76
+uses-feature#android.hardware.location.gps
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:55:5-66
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:55:19-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:57:5-79
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:57:22-76
+uses-permission#android.permission.CAMERA
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:60:5-65
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:60:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:62:5-71
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-71
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-71
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:62:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:63:5-79
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-80
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:63:22-77
+uses-sdk
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+MERGED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.1.0-rc02] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/7c8b56af2739c0925a2a64d645abbbbf/material-1.1.0-rc02/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.1.0-rc02] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/7c8b56af2739c0925a2a64d645abbbbf/material-1.1.0-rc02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6c5a1a33c151bf1b1b969a4997bc8337/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6c5a1a33c151bf1b1b969a4997bc8337/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-10:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/8a144bf192d6484f4ce6240d7fa27967/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/8a144bf192d6484f4ce6240d7fa27967/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/130b3e7299d7b916415d9bf24d660e86/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/130b3e7299d7b916415d9bf24d660e86/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a03af0ca606b0afbfb3b2e724fbbb37f/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a03af0ca606b0afbfb3b2e724fbbb37f/jetified-play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/69bb246ee492a12aa1da92077170be77/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/69bb246ee492a12aa1da92077170be77/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a3baafcd43ce1780d3430833b197fb13/jetified-firebase-installations-interop-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a3baafcd43ce1780d3430833b197fb13/jetified-firebase-installations-interop-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9f753adbd07fbe4faac50d5081095fbc/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9f753adbd07fbe4faac50d5081095fbc/jetified-play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a4ddce84ad54f04bc0ddf2acdb2f05d4/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a4ddce84ad54f04bc0ddf2acdb2f05d4/jetified-firebase-measurement-connector-18.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/f2ad40b7824eb372f4d8a9636d7e3bf4/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/f2ad40b7824eb372f4d8a9636d7e3bf4/jetified-play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b2250d6351df54d89fb411725865672d/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b2250d6351df54d89fb411725865672d/jetified-play-services-stats-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/33864422152bb0af748686115ae1452a/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/33864422152bb0af748686115ae1452a/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/0a5d1ddc01de78a90b6c8d414c9a6e9c/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/0a5d1ddc01de78a90b6c8d414c9a6e9c/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/43eb2d2e7e68e27bf73363f2db15d7be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/43eb2d2e7e68e27bf73363f2db15d7be/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2e61fb9847d1e63c42925674ddfb4e03/browser-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2e61fb9847d1e63c42925674ddfb4e03/browser-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/0e9d2ae9f4afac9ea1a0a04f8350196c/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/0e9d2ae9f4afac9ea1a0a04f8350196c/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/80dd1dc019436116365faa921b9a8769/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/80dd1dc019436116365faa921b9a8769/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d3e38a4ee70dd28ca131c75161280cc6/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d3e38a4ee70dd28ca131c75161280cc6/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c99f94f95913e12a34477cc68c241232/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c99f94f95913e12a34477cc68c241232/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/51d331fcd57936d004e0494487c5a706/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/51d331fcd57936d004e0494487c5a706/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/e28f2eab0eeac32ad77aa73d51ae8294/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/e28f2eab0eeac32ad77aa73d51ae8294/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/558f92460b4271919299f451301533e5/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/558f92460b4271919299f451301533e5/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d4b67913328dae4e98aac9b3260d763c/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d4b67913328dae4e98aac9b3260d763c/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/fdcb254cec2eda61cf9d0e6a91c1273a/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/fdcb254cec2eda61cf9d0e6a91c1273a/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3981cec19a17bddac768d603ddda69c3/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3981cec19a17bddac768d603ddda69c3/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c6f4260131458ccd0b15b1a20cb8065e/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c6f4260131458ccd0b15b1a20cb8065e/core-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b3eceaf6e5cc2df4bb865a5445be6293/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b3eceaf6e5cc2df4bb865a5445be6293/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/fef3bcbc3f86e0f441f90d2d23ba3f3b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/fef3bcbc3f86e0f441f90d2d23ba3f3b/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/923cd97b32caebf2e6b5629d421a10e9/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/923cd97b32caebf2e6b5629d421a10e9/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9f8a366e57dff09c00193bb4b84f0896/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9f8a366e57dff09c00193bb4b84f0896/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/debd70e42d2284fe791e96c9c76092fa/jetified-firebase-components-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/debd70e42d2284fe791e96c9c76092fa/jetified-firebase-components-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/f8da0049cbd1626250518b3b67a8e32e/jetified-firebase-encoders-json-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/f8da0049cbd1626250518b3b67a8e32e/jetified-firebase-encoders-json-16.0.0/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/10c582a6c9d10d357ca6c4650e6b6d1c/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/10c582a6c9d10d357ca6c4650e6b6d1c/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/40211b48e1fd6597c46fa7fb3bdc27f4/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/40211b48e1fd6597c46fa7fb3bdc27f4/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a2ae4022237bbaf198d3d05422530051/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a2ae4022237bbaf198d3d05422530051/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/744e890fd9c2229fd55f0f204e895827/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/744e890fd9c2229fd55f0f204e895827/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/72cbc39fa25a246d7e646058ccbab8e7/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/72cbc39fa25a246d7e646058ccbab8e7/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a19056003d7a5f2bc9cc665fd561b346/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/a19056003d7a5f2bc9cc665fd561b346/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/4b17712f17b32f24acf8ec9de6f31f74/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/4b17712f17b32f24acf8ec9de6f31f74/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b6f43387dd7e9eafec00725aa0944ecc/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/b6f43387dd7e9eafec00725aa0944ecc/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [org.apache.cordova:framework:7.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/cdc4ca6299b385d01030eff7fbf348bd/jetified-framework-7.0.0/AndroidManifest.xml:25:5-44
+MERGED from [org.apache.cordova:framework:7.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/cdc4ca6299b385d01030eff7fbf348bd/jetified-framework-7.0.0/AndroidManifest.xml:25:5-44
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/ab078fb7568ac501da448e6ef758105a/jetified-transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/ab078fb7568ac501da448e6ef758105a/jetified-transport-api-2.2.0/AndroidManifest.xml:18:5-20:41
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:40:13-42:64
+	android:resource
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:42:17-51
+	android:name
+		ADDED from /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:41:17-67
+uses-feature#android.hardware.camera
+ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:36
+	android:required
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-33
+	android:name
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-47
+service#com.getcapacitor.plugin.background.BackgroundTaskService
+ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+	android:exported
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-84
+receiver#com.getcapacitor.plugin.notification.TimedNotificationPublisher
+ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-100
+	android:name
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:19-97
+receiver#com.getcapacitor.plugin.notification.NotificationDismissReceiver
+ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-101
+	android:name
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-98
+meta-data#firebase_messaging_auto_init_enabled
+ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-25:37
+	android:value
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-34
+	android:name
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-64
+service#com.getcapacitor.CapacitorFirebaseMessagingService
+ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-33:19
+	android:stopWithTask
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-41
+	android:name
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-78
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
+	android:name
+		ADDED from [:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-75
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-72
+activity#com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream
+ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:51
+	android:label
+		ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-48
+	android:configChanges
+		ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-59
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-89
+activity#com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream
+ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:51
+	android:label
+		ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-48
+	android:configChanges
+		ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-59
+	android:name
+		ADDED from [:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-89
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:29:13-82
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:35:9-41:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:32:9-36:35
+MERGED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:32:9-36:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:37:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:36:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:36:13-84
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:38:13-40:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:40:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:39:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:25-78
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:18:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132

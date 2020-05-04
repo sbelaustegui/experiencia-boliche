@@ -13,9 +13,9 @@ export class Tab1Page implements OnInit{
 
   ngOnInit(): void {
     // Check dark mode
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    this.toggleDarkTheme(prefersDark.matches);
-    prefersDark.addEventListener("change",(mediaQuery) => this.toggleDarkTheme(mediaQuery.matches));
+    //const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    //this.toggleDarkTheme(prefersDark.matches);
+    //prefersDark.addEventListener("change",(mediaQuery) => this.toggleDarkTheme(mediaQuery.matches));
 
     setTimeout(() => document.body.classList.toggle('dark', true), 1000)
   }

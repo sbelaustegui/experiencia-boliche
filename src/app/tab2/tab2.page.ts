@@ -5,7 +5,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media/ngx';
 import { Media, MediaObject } from '@ionic-native/media/ngx';
 import { LoadingController } from '@ionic/angular';
-import { Plugins } from "@capacitor/core";
+import { Plugins, Toast } from "@capacitor/core";
 import { AdOptions, AdSize, AdPosition } from "capacitor-admob";
 
 const { AdMob } = Plugins;
@@ -18,61 +18,85 @@ const { AdMob } = Plugins;
 export class Tab2Page implements OnInit {
 
   loading: boolean = true;
-
+  adReady = false;
   result: string;
   file: MediaObject;
 
-  webVideo = {show: false, src: ''};
+  webVideo = { show: false, src: '' };
   regex = RegExp(/_/g);
   videos;
 
-  options: AdOptions = {
-    adId: 'ca-app-pub-6326566524185956/6552298156',
-    adSize: AdSize.FULL_BANNER,
-    position: AdPosition.BOTTOM_CENTER,
-    hasTabBar: true,
-  };
-
-  constructor(private platform: Platform, private splashScreen: SplashScreen, 
-              private media: Media,private statusBar: StatusBar,
-              private streamingMedia: StreamingMedia,
-              public loadingController: LoadingController) { }
+  constructor(private platform: Platform, private splashScreen: SplashScreen,
+    private media: Media, private statusBar: StatusBar,
+    private streamingMedia: StreamingMedia,
+    public loadingController: LoadingController) { }
 
   ngOnInit() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-   
-    
-    if (this.platform.is('hybrid')) {
-      AdMob.showBanner(this.options).then(
-          value => {
-            console.log(value); // true
-          },
-          error => {
-            console.error(error); // show error
-          }
-      );
-    }
-  });
-  this.getList();
-}
 
-  startVideo(id){
-    let selectedVideo = this.videos.find(video => video.ETag === id).Key;
-    this.platform.ready().then(() => {
+
       if (this.platform.is('hybrid')) {
-        let options: StreamingVideoOptions ={
-          successCallback: () => {this.result = 'exito'},
-          errorCallback: () => {this.result = 'error'},
-          orientation:'landscape'
+
+        const options: AdOptions = {
+          //adId: 'ca-app-pub-3940256099942544/6300978111',
+          //adId: 'ca-app-pub-3940256099942544/1033173712',
+          adId: 'ca-app-pub-6326566524185956/9667338661',//--> test ios
+          autoShow: false,
+          isTesting: false
         }
-        this.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/' + selectedVideo,options);
-      } else {
+        AdMob.prepareInterstitial(options)
+          .then(
+            (value) => {
+              if (value) {
+                this.adReady = true;
+              }
+              console.log(value);  // true
+            },
+            (error) => {
+              console.error(error); // show error
+            }
+          );
+
+      }
+
+    });
+    this.getList();
+  }
+
+  showInterstitial() {
+    AdMob.showInterstitial().then(
+      (value) => {
+        console.log(value);  // true
+      },
+      (error) => {
+        console.error(error); // show error
+      }
+    );
+  }
+
+  startVideo(id) {
+    if (this.adReady) {
+      this.adReady = false;
+      this.showInterstitial();
+    } else {
+
+      let selectedVideo = this.videos.find(video => video.ETag === id).Key;
+      this.platform.ready().then(() => {
+        if (this.platform.is('hybrid')) {
+          let options: StreamingVideoOptions = {
+            successCallback: () => { this.result = 'exito' },
+            errorCallback: () => { this.result = 'error' },
+            orientation: 'landscape'
+          }
+          this.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/' + selectedVideo, options);
+        } else {
           this.webVideo.show = true;
           this.webVideo.src = 'https://expbnn.s3.amazonaws.com/' + selectedVideo;
-      }
-    });
+        }
+      });
+    }
   }
 
   getList() {
@@ -80,13 +104,13 @@ export class Tab2Page implements OnInit {
     let region = 'us-east-1';
     let prefix = '';
     fetch(this.getIndexUrl(bucket, region, prefix))
-        .then(response => response.text())
-        .then(str => (new DOMParser()).parseFromString(str, "text/xml"))
-        .then(data => {
-          const obj = this.xml2json(data);
-          this.videos = obj.ListBucketResult.Contents;
-          this.loading = false;
-        })
+      .then(response => response.text())
+      .then(str => (new DOMParser()).parseFromString(str, "text/xml"))
+      .then(data => {
+        const obj = this.xml2json(data);
+        this.videos = obj.ListBucketResult.Contents;
+        this.loading = false;
+      })
   }
 
   getIndexUrl(bucket, region, prefix) {
