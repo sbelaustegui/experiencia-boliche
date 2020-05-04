@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
@@ -12,7 +12,7 @@ const { AdMob } = Plugins;
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss']
 })
-export class AppComponent {
+export class AppComponent{
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -26,14 +26,8 @@ export class AppComponent {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      // Check dark mode
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-      this.toggleDarkTheme(prefersDark.matches);
-      prefersDark.addEventListener("change",(mediaQuery) => this.toggleDarkTheme(mediaQuery.matches));
     });
   }
 
-  toggleDarkTheme(shouldAdd) {
-    document.body.classList.toggle('dark', shouldAdd);
-  }
+
 }
