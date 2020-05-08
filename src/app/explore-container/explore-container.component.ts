@@ -6,18 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./explore-container.component.scss'],
 })
 export class ExploreContainerComponent implements OnInit {
+
   @Input() name: string;
-  items = [];
+  @Input() items;
+  @Input() festMode: boolean;
 
   constructor() {
-    this.items = [
-        'Conectá tus auriculares',
-        'Subí el volumen',
-        'Aumentá el brillo de tu pantalla',
-        'Apagá las luces',
-        'Acercá la pantalla de tu teléfono a tus ojos',
-        'Disfrutá la Experiencia Boliche!'
-    ];
+
   }
 
   ngOnInit() {}

@@ -21,6 +21,9 @@
     <ion-item *ngFor="let video of videos" (click)="startVideo(video.ETag)">
       {{video.Key.split('.')[0].replace(regex, ' ')}}
     </ion-item>
+    <ion-item>
+<!--      This item is to fix ad banner overlap-->
+    </ion-item>
   </div>
 
   <div *ngIf="webVideo.show">
