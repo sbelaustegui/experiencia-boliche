@@ -13,5 +13,13 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Bienvenido a Experiencia Boliche"></app-explore-container>
+  <ion-list>
+    <ion-item>
+      <ion-icon slot="start" name="home-outline"></ion-icon>
+      <ion-label>Modo Fiesta</ion-label>
+      <ion-toggle slot="end" [ngModel]="festMode" (ionChange)="festModeToggle()"></ion-toggle>
+    </ion-item>
+  </ion-list>
+
+  <app-explore-container name="Bienvenido a Experiencia Boliche" [items]="festMode ? festItems : headphonesItems" [festMode]="festMode"></app-explore-container>
 </ion-content>

@@ -1,6 +1,6 @@
 <div id="container">
   <div class="icon-container">
-    <ion-icon class="headset-icon" name="headset-outline"></ion-icon>
+    <ion-icon class="headset-icon" [name]="festMode ? 'home-outline' : 'headset-outline'"></ion-icon>
   </div>
   <strong>{{ name }}</strong>
   <div class="items">
