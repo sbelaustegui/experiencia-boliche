@@ -38,29 +38,42 @@ export class Tab2Page implements OnInit {
 
 
       if (this.platform.is('hybrid')) {
-
-        const options: AdOptions = {
-          //adId: 'ca-app-pub-3940256099942544/6300978111',
-          //adId: 'ca-app-pub-3940256099942544/1033173712',
-          adId: 'ca-app-pub-6326566524185956/9667338661',//--> test ios
-          autoShow: false,
-          isTesting: false
-        }
-        AdMob.prepareInterstitial(options)
-          .then(
-            (value) => {
-              if (value) {
-                this.adReady = true;
+        let options: AdOptions;
+        if(this.platform.is('android')){
+          options = {
+            adId: 'ca-app-pub-6326566524185956/6552298156',
+            adSize: AdSize.FULL_BANNER,
+            position: AdPosition.BOTTOM_CENTER,
+            hasTabBar: true,
+          };
+          AdMob.showBanner(options).then(
+              value => {
+                console.log(value); // true
+              },
+              error => {
+                console.error(error); // show error
               }
-              console.log(value);  // true
-            },
-            (error) => {
-              console.error(error); // show error
-            }
           );
-
+        } else {
+          options = {
+            adId: 'ca-app-pub-6326566524185956/9667338661',
+            autoShow: false,
+            isTesting: false
+          }
+          AdMob.prepareInterstitial(options)
+            .then(
+                (value) => {
+                  if (value) {
+                    this.adReady = true;
+                  }
+                  console.log(value);  // true
+                },
+                (error) => {
+                  console.error(error); // show error
+                }
+            );
+        }
       }
-
     });
     this.getList();
   }
