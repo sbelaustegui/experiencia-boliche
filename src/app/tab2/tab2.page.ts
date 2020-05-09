@@ -5,7 +5,7 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { StreamingMedia, StreamingVideoOptions } from '@ionic-native/streaming-media/ngx';
 import { Media, MediaObject } from '@ionic-native/media/ngx';
 import { LoadingController } from '@ionic/angular';
-import { Plugins, Toast } from "@capacitor/core";
+import { Plugins } from "@capacitor/core";
 import { AdOptions, AdSize, AdPosition } from "capacitor-admob";
 
 const { AdMob } = Plugins;
@@ -24,7 +24,7 @@ export class Tab2Page implements OnInit {
 
   webVideo = { show: false, src: '' };
   regex = RegExp(/_/g);
-  videos;
+  videosMap: Map<string, []>;
 
   constructor(private platform: Platform, private splashScreen: SplashScreen,
     private media: Media, private statusBar: StatusBar,
@@ -33,46 +33,40 @@ export class Tab2Page implements OnInit {
 
   ngOnInit() {
     this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-
-
-      if (this.platform.is('hybrid')) {
-        let options: AdOptions;
-        if(this.platform.is('android')){
-          options = {
-            adId: 'ca-app-pub-6326566524185956/6552298156',
-            adSize: AdSize.FULL_BANNER,
-            position: AdPosition.BOTTOM_CENTER,
-            hasTabBar: true,
-          };
-          AdMob.showBanner(options).then(
-              value => {
-                console.log(value); // true
+      let options: AdOptions;
+      if(this.platform.is('android')){
+        options = {
+          adId: 'ca-app-pub-6326566524185956/6552298156',
+          adSize: AdSize.FULL_BANNER,
+          position: AdPosition.BOTTOM_CENTER,
+          hasTabBar: true,
+        };
+        AdMob.showBanner(options).then(
+            value => {
+              console.log(value); // true
+            },
+            error => {
+              console.error(error); // show error
+            }
+        );
+      } else if(this.platform.is('ios')) {
+        options = {
+          adId: 'ca-app-pub-6326566524185956/9667338661',
+          autoShow: false,
+          isTesting: false
+        }
+        AdMob.prepareInterstitial(options)
+          .then(
+              (value) => {
+                if (value) {
+                  this.adReady = true;
+                }
+                console.log(value);  // true
               },
-              error => {
+              (error) => {
                 console.error(error); // show error
               }
           );
-        } else {
-          options = {
-            adId: 'ca-app-pub-6326566524185956/9667338661',
-            autoShow: false,
-            isTesting: false
-          }
-          AdMob.prepareInterstitial(options)
-            .then(
-                (value) => {
-                  if (value) {
-                    this.adReady = true;
-                  }
-                  console.log(value);  // true
-                },
-                (error) => {
-                  console.error(error); // show error
-                }
-            );
-        }
       }
     });
     this.getList();
@@ -89,13 +83,13 @@ export class Tab2Page implements OnInit {
     );
   }
 
-  startVideo(id) {
-    if (this.adReady) {
+  startVideo(id, letter) {
+    if (this.platform.is('ios') && this.adReady) {
       this.adReady = false;
       this.showInterstitial();
     } else {
-
-      let selectedVideo = this.videos.find(video => video.ETag === id).Key;
+      // @ts-ignore
+      let selectedVideo = this.videosMap.get(letter).find((video: any) => video.ETag === id).Key;
       this.platform.ready().then(() => {
         if (this.platform.is('hybrid')) {
           let options: StreamingVideoOptions = {
@@ -121,13 +115,26 @@ export class Tab2Page implements OnInit {
       .then(str => (new DOMParser()).parseFromString(str, "text/xml"))
       .then(data => {
         const obj = this.xml2json(data);
-        this.videos = obj.ListBucketResult.Contents;
+        // this.videos = obj.ListBucketResult.Contents;
+        this.videosMap = ((m, a) => (
+            a.forEach(s => {
+              let a = m.get(s[0]) || [];
+              m.set(s[0], (a.push(s), a));
+            }), m))(new Map(), obj.ListBucketResult.Contents);
         this.loading = false;
       })
   }
 
   getIndexUrl(bucket, region, prefix) {
     return 'https://s3.' + region + '.amazonaws.com/' + bucket + '/?delimiter=/&prefix=' + prefix;
+  }
+
+  getVideoMapList() {
+    return Array.from(this.videosMap.keys());
+  }
+
+  getListFromLetter(letter) {
+    return Array.from(this.videosMap.get(letter));
   }
 
   /**
