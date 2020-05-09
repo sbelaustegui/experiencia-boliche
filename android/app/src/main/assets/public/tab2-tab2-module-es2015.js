@@ -90,7 +90,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Seleccione la canción\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Seleccioná la canción</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <div class=\"loader\" *ngIf=\"loading\">\n    <ion-spinner></ion-spinner>\n  </div>\n\n  <div class=\"items\" *ngIf=\"!loading\">\n    <ion-item *ngFor=\"let video of videos\" (click)=\"startVideo(video.ETag)\">\n      {{video.Key.split('.')[0].replace(regex, ' ')}}\n    </ion-item>\n  </div>\n\n  <div *ngIf=\"webVideo.show\">\n    <h2>Web</h2>\n    <video [crossOrigin]=\"'anonymous'\" [autoplay]=\"true\" [muted]=\"false\">\n      <source [src]=\"webVideo.src\" type=\"video/mp4\">\n    </video>\n  </div>\n\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Seleccione la canción\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Seleccioná la canción</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <div class=\"loader\" *ngIf=\"loading\">\n    <ion-spinner></ion-spinner>\n  </div>\n\n  <div class=\"items\" *ngIf=\"!loading\">\n    <ion-item *ngFor=\"let video of videos\" (click)=\"startVideo(video.ETag)\">\n      {{video.Key.split('.')[0].replace(regex, ' ')}}\n    </ion-item>\n    <ion-item>\n<!--      This item is to fix ad banner overlap-->\n    </ion-item>\n  </div>\n\n  <div *ngIf=\"webVideo.show\">\n    <h2>Web</h2>\n    <video [crossOrigin]=\"'anonymous'\" [autoplay]=\"true\" [muted]=\"false\">\n      <source [src]=\"webVideo.src\" type=\"video/mp4\">\n    </video>\n  </div>\n\n</ion-content>\n");
 
 /***/ }),
 
@@ -228,46 +228,78 @@ let Tab2Page = class Tab2Page {
         this.streamingMedia = streamingMedia;
         this.loadingController = loadingController;
         this.loading = true;
+        this.adReady = false;
         this.webVideo = { show: false, src: '' };
         this.regex = RegExp(/_/g);
-        this.options = {
-            //adId: 'ca-app-pub-6326566524185956/6552298156', -> Prod
-            adId: 'ca-app-pub-3940256099942544/6300978111',
-            adSize: capacitor_admob__WEBPACK_IMPORTED_MODULE_8__["AdSize"].FULL_BANNER,
-            position: capacitor_admob__WEBPACK_IMPORTED_MODULE_8__["AdPosition"].BOTTOM_CENTER,
-            hasTabBar: true,
-        };
     }
     ngOnInit() {
         this.platform.ready().then(() => {
             this.statusBar.styleDefault();
             this.splashScreen.hide();
             if (this.platform.is('hybrid')) {
-                AdMob.showBanner(this.options).then(value => {
-                    console.log(value); // true
-                }, error => {
-                    console.error(error); // show error
-                });
+                let options;
+                if (this.platform.is('android')) {
+                    options = {
+                        adId: 'ca-app-pub-6326566524185956/6552298156',
+                        adSize: capacitor_admob__WEBPACK_IMPORTED_MODULE_8__["AdSize"].FULL_BANNER,
+                        position: capacitor_admob__WEBPACK_IMPORTED_MODULE_8__["AdPosition"].BOTTOM_CENTER,
+                        hasTabBar: true,
+                    };
+                    AdMob.showBanner(options).then(value => {
+                        console.log(value); // true
+                    }, error => {
+                        console.error(error); // show error
+                    });
+                }
+                else {
+                    options = {
+                        adId: 'ca-app-pub-6326566524185956/9667338661',
+                        autoShow: false,
+                        isTesting: false
+                    };
+                    AdMob.prepareInterstitial(options)
+                        .then((value) => {
+                        if (value) {
+                            this.adReady = true;
+                        }
+                        console.log(value); // true
+                    }, (error) => {
+                        console.error(error); // show error
+                    });
+                }
             }
         });
         this.getList();
     }
-    startVideo(id) {
-        let selectedVideo = this.videos.find(video => video.ETag === id).Key;
-        this.platform.ready().then(() => {
-            if (this.platform.is('hybrid')) {
-                let options = {
-                    successCallback: () => { this.result = 'exito'; },
-                    errorCallback: () => { this.result = 'error'; },
-                    orientation: 'landscape'
-                };
-                this.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/' + selectedVideo, options);
-            }
-            else {
-                this.webVideo.show = true;
-                this.webVideo.src = 'https://expbnn.s3.amazonaws.com/' + selectedVideo;
-            }
+    showInterstitial() {
+        AdMob.showInterstitial().then((value) => {
+            console.log(value); // true
+        }, (error) => {
+            console.error(error); // show error
         });
+    }
+    startVideo(id) {
+        if (this.adReady) {
+            this.adReady = false;
+            this.showInterstitial();
+        }
+        else {
+            let selectedVideo = this.videos.find(video => video.ETag === id).Key;
+            this.platform.ready().then(() => {
+                if (this.platform.is('hybrid')) {
+                    let options = {
+                        successCallback: () => { this.result = 'exito'; },
+                        errorCallback: () => { this.result = 'error'; },
+                        orientation: 'landscape'
+                    };
+                    this.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/' + selectedVideo, options);
+                }
+                else {
+                    this.webVideo.show = true;
+                    this.webVideo.src = 'https://expbnn.s3.amazonaws.com/' + selectedVideo;
+                }
+            });
+        }
     }
     getList() {
         let bucket = 'expbnn';

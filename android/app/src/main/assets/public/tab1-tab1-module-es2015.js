@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Inicio\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Experiencia Boliche</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <app-explore-container name=\"Bienvenido a Experiencia Boliche\"></app-explore-container>\n</ion-content>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Inicio\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Experiencia Boliche</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-list>\n    <ion-item>\n      <ion-icon slot=\"start\" name=\"home-outline\"></ion-icon>\n      <ion-label>Modo Fiesta</ion-label>\n      <ion-toggle slot=\"end\" [ngModel]=\"festMode\" (ionChange)=\"festModeToggle()\"></ion-toggle>\n    </ion-item>\n  </ion-list>\n\n  <app-explore-container name=\"Bienvenido a Experiencia Boliche\" [items]=\"festMode ? festItems : headphonesItems\" [festMode]=\"festMode\"></app-explore-container>\n</ion-content>\n");
 
 /***/ }),
 
@@ -124,16 +124,37 @@ __webpack_require__.r(__webpack_exports__);
 
 let Tab1Page = class Tab1Page {
     constructor() {
+        this.festMode = false;
+        this.headphonesItems = [
+            'Conectá tus auriculares',
+            'Subí el volumen',
+            'Aumentá el brillo de tu pantalla',
+            'Apagá las luces',
+            'Cerrá los ojos',
+            'Acercá la pantalla de tu teléfono a tus ojos',
+            'Disfrutá la Experiencia Boliche!'
+        ];
+        this.festItems = [
+            'Subí el volumen de tu dispositivo',
+            'Aumentá el brillo de tu pantalla',
+            'Apagá las luces',
+            'Reproduce una canción desde "Experiencia"',
+            'Apoyá tu teléfono en una mesa',
+            'Disfrutá la Experiencia Boliche!'
+        ];
     }
     ngOnInit() {
         // Check dark mode
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-        this.toggleDarkTheme(prefersDark.matches);
-        prefersDark.addEventListener("change", (mediaQuery) => this.toggleDarkTheme(mediaQuery.matches));
+        //const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+        //this.toggleDarkTheme(prefersDark.matches);
+        //prefersDark.addEventListener("change",(mediaQuery) => this.toggleDarkTheme(mediaQuery.matches));
         setTimeout(() => document.body.classList.toggle('dark', true), 1000);
     }
     toggleDarkTheme(shouldAdd) {
         document.body.classList.toggle('dark', shouldAdd);
+    }
+    festModeToggle() {
+        this.festMode = !this.festMode;
     }
 };
 Tab1Page = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([

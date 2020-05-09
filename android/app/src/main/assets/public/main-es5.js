@@ -913,7 +913,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.splashScreen = splashScreen;
         this.statusBar = statusBar; //AdMob.initialize('ca-app-pub-6326566524185956~8248523202');--> prod
 
-        AdMob.initialize('ca-app-pub-6326566524185956~1131137434');
+        AdMob.initialize('ca-app-pub-6326566524185956~1131137434'); //--> test ios
+        //AdMob.initialize('ca-app-pub-3940256099942544~3347511713');
+
         this.initializeApp();
       }
 

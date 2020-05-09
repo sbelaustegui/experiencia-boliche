@@ -302,7 +302,7 @@ const openURL = async (url, ev, direction) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"container\">\n  <div class=\"icon-container\">\n    <ion-icon class=\"headset-icon\" name=\"headset-outline\"></ion-icon>\n  </div>\n  <strong>{{ name }}</strong>\n  <div class=\"items\">\n    <div class=\"item\" *ngFor=\"let item of items; let i = index;\">\n      <p>{{i + 1}}</p>\n      <p>{{item}}</p>\n    </div>\n  </div>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"container\">\n  <div class=\"icon-container\">\n    <ion-icon class=\"headset-icon\" [name]=\"festMode ? 'home-outline' : 'headset-outline'\"></ion-icon>\n  </div>\n  <strong>{{ name }}</strong>\n  <div class=\"items\">\n    <div class=\"item\" *ngFor=\"let item of items; let i = index;\">\n      <p>{{i + 1}}</p>\n      <p>{{item}}</p>\n    </div>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -335,15 +335,6 @@ __webpack_require__.r(__webpack_exports__);
 
 let ExploreContainerComponent = class ExploreContainerComponent {
     constructor() {
-        this.items = [];
-        this.items = [
-            'Conectá tus auriculares',
-            'Subí el volumen',
-            'Aumentá el brillo de tu pantalla',
-            'Apagá las luces',
-            'Acercá la pantalla de tu teléfono a tus ojos',
-            'Disfrutá la Experiencia Boliche!'
-        ];
     }
     ngOnInit() { }
 };
@@ -351,6 +342,14 @@ tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", String)
 ], ExploreContainerComponent.prototype, "name", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Object)
+], ExploreContainerComponent.prototype, "items", void 0);
+tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])(),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:type", Boolean)
+], ExploreContainerComponent.prototype, "festMode", void 0);
 ExploreContainerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-explore-container',

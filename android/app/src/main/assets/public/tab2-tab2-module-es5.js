@@ -154,7 +154,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Seleccione la canción\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Seleccioná la canción</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <div class=\"loader\" *ngIf=\"loading\">\n    <ion-spinner></ion-spinner>\n  </div>\n\n  <div class=\"items\" *ngIf=\"!loading\">\n    <ion-item *ngFor=\"let video of videos\" (click)=\"startVideo(video.ETag)\">\n      {{video.Key.split('.')[0].replace(regex, ' ')}}\n    </ion-item>\n  </div>\n\n  <div *ngIf=\"webVideo.show\">\n    <h2>Web</h2>\n    <video [crossOrigin]=\"'anonymous'\" [autoplay]=\"true\" [muted]=\"false\">\n      <source [src]=\"webVideo.src\" type=\"video/mp4\">\n    </video>\n  </div>\n\n</ion-content>\n";
+    __webpack_exports__["default"] = "<ion-header [translucent]=\"true\">\n  <ion-toolbar>\n    <ion-title>\n      Seleccione la canción\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content [fullscreen]=\"true\">\n  <ion-header collapse=\"condense\">\n    <ion-toolbar>\n      <ion-title size=\"large\">Seleccioná la canción</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <div class=\"loader\" *ngIf=\"loading\">\n    <ion-spinner></ion-spinner>\n  </div>\n\n  <div class=\"items\" *ngIf=\"!loading\">\n    <ion-item *ngFor=\"let video of videos\" (click)=\"startVideo(video.ETag)\">\n      {{video.Key.split('.')[0].replace(regex, ' ')}}\n    </ion-item>\n    <ion-item>\n<!--      This item is to fix ad banner overlap-->\n    </ion-item>\n  </div>\n\n  <div *ngIf=\"webVideo.show\">\n    <h2>Web</h2>\n    <video [crossOrigin]=\"'anonymous'\" [autoplay]=\"true\" [muted]=\"false\">\n      <source [src]=\"webVideo.src\" type=\"video/mp4\">\n    </video>\n  </div>\n\n</ion-content>\n";
     /***/
   },
 
@@ -404,18 +404,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.streamingMedia = streamingMedia;
         this.loadingController = loadingController;
         this.loading = true;
+        this.adReady = false;
         this.webVideo = {
           show: false,
           src: ''
         };
         this.regex = RegExp(/_/g);
-        this.options = {
-          //adId: 'ca-app-pub-6326566524185956/6552298156', -> Prod
-          adId: 'ca-app-pub-3940256099942544/6300978111',
-          adSize: capacitor_admob__WEBPACK_IMPORTED_MODULE_8__["AdSize"].FULL_BANNER,
-          position: capacitor_admob__WEBPACK_IMPORTED_MODULE_8__["AdPosition"].BOTTOM_CENTER,
-          hasTabBar: true
-        };
       }
 
       _createClass(Tab2Page, [{
@@ -429,41 +423,80 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             _this.splashScreen.hide();
 
             if (_this.platform.is('hybrid')) {
-              AdMob.showBanner(_this.options).then(function (value) {
-                console.log(value); // true
-              }, function (error) {
-                console.error(error); // show error
-              });
+              var options;
+
+              if (_this.platform.is('android')) {
+                options = {
+                  adId: 'ca-app-pub-6326566524185956/6552298156',
+                  adSize: capacitor_admob__WEBPACK_IMPORTED_MODULE_8__["AdSize"].FULL_BANNER,
+                  position: capacitor_admob__WEBPACK_IMPORTED_MODULE_8__["AdPosition"].BOTTOM_CENTER,
+                  hasTabBar: true
+                };
+                AdMob.showBanner(options).then(function (value) {
+                  console.log(value); // true
+                }, function (error) {
+                  console.error(error); // show error
+                });
+              } else {
+                options = {
+                  adId: 'ca-app-pub-6326566524185956/9667338661',
+                  autoShow: false,
+                  isTesting: false
+                };
+                AdMob.prepareInterstitial(options).then(function (value) {
+                  if (value) {
+                    _this.adReady = true;
+                  }
+
+                  console.log(value); // true
+                }, function (error) {
+                  console.error(error); // show error
+                });
+              }
             }
           });
           this.getList();
+        }
+      }, {
+        key: "showInterstitial",
+        value: function showInterstitial() {
+          AdMob.showInterstitial().then(function (value) {
+            console.log(value); // true
+          }, function (error) {
+            console.error(error); // show error
+          });
         }
       }, {
         key: "startVideo",
         value: function startVideo(id) {
           var _this2 = this;
 
-          var selectedVideo = this.videos.find(function (video) {
-            return video.ETag === id;
-          }).Key;
-          this.platform.ready().then(function () {
-            if (_this2.platform.is('hybrid')) {
-              var options = {
-                successCallback: function successCallback() {
-                  _this2.result = 'exito';
-                },
-                errorCallback: function errorCallback() {
-                  _this2.result = 'error';
-                },
-                orientation: 'landscape'
-              };
+          if (this.adReady) {
+            this.adReady = false;
+            this.showInterstitial();
+          } else {
+            var selectedVideo = this.videos.find(function (video) {
+              return video.ETag === id;
+            }).Key;
+            this.platform.ready().then(function () {
+              if (_this2.platform.is('hybrid')) {
+                var options = {
+                  successCallback: function successCallback() {
+                    _this2.result = 'exito';
+                  },
+                  errorCallback: function errorCallback() {
+                    _this2.result = 'error';
+                  },
+                  orientation: 'landscape'
+                };
 
-              _this2.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/' + selectedVideo, options);
-            } else {
-              _this2.webVideo.show = true;
-              _this2.webVideo.src = 'https://expbnn.s3.amazonaws.com/' + selectedVideo;
-            }
-          });
+                _this2.streamingMedia.playVideo('https://expbnn.s3.amazonaws.com/' + selectedVideo, options);
+              } else {
+                _this2.webVideo.show = true;
+                _this2.webVideo.src = 'https://expbnn.s3.amazonaws.com/' + selectedVideo;
+              }
+            });
+          }
         }
       }, {
         key: "getList",
