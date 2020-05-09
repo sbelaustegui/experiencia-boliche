@@ -1,324 +1,379 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="io.ionic.starter"
+3    package="com.experiencia.boliche"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+8-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
+9-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml
 10
 11    <!-- Permissions -->
 12
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:48:5-67
-13-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:48:22-64
-14    <!-- Camera, Photos, input file -->
-15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:50:5-79
-15-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:50:22-77
-16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-16-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:51:5-81
-16-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:51:22-78
-17    <!-- Geolocation API -->
-18    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-18-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:53:5-81
-18-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:53:22-78
-19    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-19-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:54:5-79
-19-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:54:22-76
-20
-21    <uses-feature android:name="android.hardware.location.gps" />
-21-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:55:5-66
-21-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:55:19-63
-22    <!-- Network API -->
-23    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-23-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:57:5-79
-23-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:57:22-76
-24    <!-- Navigator.getUserMedia -->
-25    <!-- Video -->
-26    <uses-permission android:name="android.permission.CAMERA" />
-26-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:60:5-65
-26-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:60:22-62
-27    <!-- Audio -->
-28    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-28-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:62:5-71
-28-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:62:22-68
-29    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-29-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:63:5-79
-29-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:63:22-77
-30
-31    <uses-feature
-31-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:36
-32        android:name="android.hardware.camera"
-32-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-47
-33        android:required="false" />
-33-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-33
-34
-35    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-35-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-75
-35-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-72
-36    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-36-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:5-68
-36-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:24:22-65
-37    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-37-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:5-82
-37-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:22-79
-38
-39    <application
-39-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:5:5-44:19
-40        android:allowBackup="true"
-40-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:6:9-35
-41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-41-->[androidx.core:core:1.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c6f4260131458ccd0b15b1a20cb8065e/core-1.2.0/AndroidManifest.xml:24:18-86
-42        android:debuggable="true"
-43        android:icon="@mipmap/ic_launcher"
-43-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:7:9-43
-44        android:label="@string/app_name"
-44-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:8:9-41
-45        android:roundIcon="@mipmap/ic_launcher_round"
-45-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:9:9-54
-46        android:supportsRtl="true"
-46-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:10:9-35
-47        android:testOnly="true"
-48        android:theme="@style/AppTheme"
-48-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:12:9-40
-49        android:usesCleartextTraffic="true" >
-49-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:11:9-44
-50        <activity
-50-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:14:9-33:20
-51            android:name="io.ionic.starter.MainActivity"
-51-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:16:13-57
-52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
-52-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:15:13-129
-53            android:label="@string/title_activity_main"
-53-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:17:13-56
-54            android:launchMode="singleTask"
-54-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:19:13-44
-55            android:theme="@style/AppTheme.NoActionBarLaunch" >
-55-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:18:13-62
-56            <intent-filter>
-56-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:21:13-24:29
-57                <action android:name="android.intent.action.MAIN" />
-57-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:22:17-69
-57-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:22:25-66
+13-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:48:5-67
+13-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:48:22-64
+14    <!-- Network API -->
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:50:5-79
+15-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:50:22-76
+16    <!-- Audio -->
+17    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+17-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:52:5-79
+17-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:52:22-77
+18
+19    <uses-feature
+19-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-13:36
+20        android:name="android.hardware.camera"
+20-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-47
+21        android:required="false" />
+21-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-33
+22
+23    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+23-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-81
+23-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:22-78
+24    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+24-->[com.google.android.gms:play-services-measurement-api:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/86099965e0825156c26d8ace6673dd46/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:24:5-68
+24-->[com.google.android.gms:play-services-measurement-api:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/86099965e0825156c26d8ace6673dd46/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:24:22-65
+25    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+25-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:5-82
+25-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:26:22-79
+26    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+26-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:5-110
+26-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:26:22-107
+27
+28    <application
+28-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:6:5-44:19
+29        android:allowBackup="true"
+29-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:7:9-35
+30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+30-->[androidx.core:core:1.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/cf23515831a30cf8e0e5ff774beb1451/core-1.2.0/AndroidManifest.xml:24:18-86
+31        android:debuggable="true"
+32        android:icon="@mipmap/ic_launcher"
+32-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:8:9-43
+33        android:label="@string/app_name"
+33-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:9:9-41
+34        android:roundIcon="@mipmap/ic_launcher_round"
+34-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:10:9-54
+35        android:supportsRtl="true"
+35-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:11:9-35
+36        android:testOnly="true"
+37        android:theme="@style/AppTheme" >
+37-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:12:9-40
+38        <meta-data
+38-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:13:9-134
+39            android:name="com.google.android.gms.ads.APPLICATION_ID"
+39-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:13:20-76
+40            android:value="ca-app-pub-6326566524185956~8248523202" />
+40-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:13:77-131
+41
+42        <activity
+42-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:14:9-33:20
+43            android:name="com.experiencia.boliche.MainActivity"
+43-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:16:13-64
+44            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
+44-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:15:13-129
+45            android:label="@string/title_activity_main"
+45-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:17:13-56
+46            android:launchMode="singleTask"
+46-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:19:13-44
+47            android:theme="@style/AppTheme.NoActionBarLaunch" >
+47-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:18:13-62
+48            <intent-filter>
+48-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:21:13-24:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:22:17-69
+49-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:22:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:23:17-77
+51-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:23:27-74
+52            </intent-filter>
+53            <intent-filter>
+53-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:26:13-31:29
+54                <action android:name="android.intent.action.VIEW" />
+54-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:27:17-69
+54-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:27:25-66
+55
+56                <category android:name="android.intent.category.DEFAULT" />
+56-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:28:17-76
+56-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:28:27-73
+57                <category android:name="android.intent.category.BROWSABLE" />
+57-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:29:17-78
+57-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:29:27-75
 58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:23:17-77
-59-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:23:27-74
+59                <data android:scheme="@string/custom_url_scheme" />
+59-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:30:17-68
+59-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:30:23-65
 60            </intent-filter>
-61            <intent-filter>
-61-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:26:13-31:29
-62                <action android:name="android.intent.action.VIEW" />
-62-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:27:17-69
-62-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:27:25-66
-63
-64                <category android:name="android.intent.category.DEFAULT" />
-64-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:28:17-76
-64-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:28:27-73
-65                <category android:name="android.intent.category.BROWSABLE" />
-65-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:29:17-78
-65-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:29:27-75
-66
-67                <data android:scheme="@string/custom_url_scheme" />
-67-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:30:17-68
-67-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:30:23-65
-68            </intent-filter>
-69        </activity>
-70
-71        <provider
-72            android:name="androidx.core.content.FileProvider"
-72-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:36:13-62
-73            android:authorities="io.ionic.starter.fileprovider"
-73-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:37:13-64
-74            android:exported="false"
-74-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:38:13-37
-75            android:grantUriPermissions="true" >
-75-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:39:13-47
-76            <meta-data
-76-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:40:13-42:64
-77                android:name="android.support.FILE_PROVIDER_PATHS"
-77-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:41:17-67
-78                android:resource="@xml/file_paths" />
-78-->/Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:42:17-51
-79        </provider>
-80
-81        <service
-81-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
-82            android:name="com.getcapacitor.plugin.background.BackgroundTaskService"
-82-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-84
-83            android:exported="false" />
-83-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
-84
-85        <receiver android:name="com.getcapacitor.plugin.notification.TimedNotificationPublisher" />
-85-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-100
-85-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:19-97
-86        <receiver android:name="com.getcapacitor.plugin.notification.NotificationDismissReceiver" />
-86-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-101
-86-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-98
-87
-88        <meta-data
-88-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-25:37
-89            android:name="firebase_messaging_auto_init_enabled"
-89-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-64
-90            android:value="false" />
-90-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-34
+61        </activity>
+62
+63        <provider
+64            android:name="androidx.core.content.FileProvider"
+64-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:36:13-62
+65            android:authorities="com.experiencia.boliche.fileprovider"
+65-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:37:13-64
+66            android:exported="false"
+66-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:38:13-37
+67            android:grantUriPermissions="true" >
+67-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:39:13-47
+68            <meta-data
+68-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:40:13-42:64
+69                android:name="android.support.FILE_PROVIDER_PATHS"
+69-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:41:17-67
+70                android:resource="@xml/file_paths" />
+70-->/Users/sebasbelaustegui/projects/experiencia-boliche/android/app/src/main/AndroidManifest.xml:42:17-51
+71        </provider>
+72
+73        <service
+73-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+74            android:name="com.getcapacitor.plugin.background.BackgroundTaskService"
+74-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-84
+75            android:exported="false" />
+75-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+76
+77        <receiver android:name="com.getcapacitor.plugin.notification.TimedNotificationPublisher" />
+77-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:9-100
+77-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:19-97
+78        <receiver android:name="com.getcapacitor.plugin.notification.NotificationDismissReceiver" />
+78-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:9-101
+78-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:19-98
+79
+80        <meta-data
+80-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-25:37
+81            android:name="firebase_messaging_auto_init_enabled"
+81-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-64
+82            android:value="false" />
+82-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-34
+83
+84        <service
+84-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-33:19
+85            android:name="com.getcapacitor.CapacitorFirebaseMessagingService"
+85-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-78
+86            android:stopWithTask="false" >
+86-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-41
+87            <intent-filter>
+87-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
+88                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+88-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
+88-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
+89            </intent-filter>
+90        </service>
 91
-92        <service
-92-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-33:19
-93            android:name="com.getcapacitor.CapacitorFirebaseMessagingService"
-93-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:28:13-78
-94            android:stopWithTask="false" >
-94-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:29:13-41
-95            <intent-filter>
-95-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
-96                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-96-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
-96-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
-97            </intent-filter>
-98        </service>
-99
-100        <activity
-100-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:51
-101            android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream"
-101-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-89
-102            android:configChanges="orientation|screenSize"
-102-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-59
-103            android:label="Simple Audio Stream" />
-103-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-48
-104        <activity
-104-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:51
-105            android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream"
-105-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-89
-106            android:configChanges="orientation|screenSize"
-106-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-59
-107            android:label="Simple Video Stream" />
-107-->[:capacitor-cordova-android-plugins] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-48
-108        <!--
-109             FirebaseMessagingService performs security checks at runtime,
-110             but set to not exported to explicitly avoid allowing another app to call it.
-111        -->
-112        <service
-112-->[com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:28:9-34:19
-113            android:name="com.google.firebase.messaging.FirebaseMessagingService"
-113-->[com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:29:13-82
+92        <activity
+92-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:9-22:51
+93            android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleAudioStream"
+93-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-89
+94            android:configChanges="orientation|screenSize"
+94-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-59
+95            android:label="Simple Audio Stream" />
+95-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-48
+96        <activity
+96-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:23:9-26:51
+97            android:name="com.hutchind.cordova.plugins.streamingmedia.SimpleVideoStream"
+97-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:13-89
+98            android:configChanges="orientation|screenSize"
+98-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:25:13-59
+99            android:label="Simple Video Stream" />
+99-->[:capacitor-cordova-android-plugins] /Users/sebasbelaustegui/projects/experiencia-boliche/android/capacitor-cordova-android-plugins/build/intermediates/library_manifest/debug/AndroidManifest.xml:26:13-48
+100        <!--
+101             FirebaseMessagingService performs security checks at runtime,
+102             but set to not exported to explicitly avoid allowing another app to call it.
+103        -->
+104        <service
+104-->[com.google.firebase:firebase-messaging:20.1.2] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:28:9-34:19
+105            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+105-->[com.google.firebase:firebase-messaging:20.1.2] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:29:13-82
+106            android:exported="false" >
+106-->[com.google.firebase:firebase-messaging:20.1.2] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:30:13-37
+107            <intent-filter android:priority="-500" >
+107-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
+108                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+108-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
+108-->[:capacitor-android] /Users/sebasbelaustegui/projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
+109            </intent-filter>
+110        </service>
+111        <service
+111-->[com.google.firebase:firebase-messaging:20.1.2] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:35:9-41:19
+112            android:name="com.google.firebase.components.ComponentDiscoveryService"
+112-->[com.google.firebase:firebase-messaging:20.1.2] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:36:13-84
+113            android:directBootAware="true"
+113-->[com.google.firebase:firebase-common:19.3.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
 114            android:exported="false" >
-114-->[com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:30:13-37
-115            <intent-filter android:priority="-500" >
-115-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:30:13-32:29
-116                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-116-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:17-78
-116-->[:capacitor-android] /Users/jjaramil/Documents/JJ/Projects/experiencia-boliche/node_modules/@capacitor/android/capacitor/build/intermediates/library_manifest/debug/AndroidManifest.xml:31:25-75
-117            </intent-filter>
-118        </service>
-119        <service
-119-->[com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:35:9-41:19
-120            android:name="com.google.firebase.components.ComponentDiscoveryService"
-120-->[com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:36:13-84
-121            android:directBootAware="true"
-121-->[com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-122            android:exported="false" >
-122-->[com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:37:13-37
-123            <meta-data
-123-->[com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:38:13-40:85
-124                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
-124-->[com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:39:17-119
-125                android:value="com.google.firebase.components.ComponentRegistrar" />
-125-->[com.google.firebase:firebase-messaging:20.1.2] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/9640aaea40e713e472fa8809bb764a00/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:40:17-82
-126            <meta-data
-126-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
-127                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
-127-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
-128                android:value="com.google.firebase.components.ComponentRegistrar" />
-128-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/d1f75898c761cea33a2c195c10b32583/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
-129            <meta-data
-129-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:32:13-34:85
-130                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-130-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:33:17-96
-131                android:value="com.google.firebase.components.ComponentRegistrar" />
-131-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:34:17-82
-132            <meta-data
-132-->[com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:17:13-19:85
-133                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
-133-->[com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:18:17-127
-134                android:value="com.google.firebase.components.ComponentRegistrar" />
-134-->[com.google.firebase:firebase-installations:16.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/5d985db407e4006731076468723f4669/jetified-firebase-installations-16.0.0/AndroidManifest.xml:19:17-82
-135        </service>
-136
-137        <receiver
-137-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:37:9-44:20
-138            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-138-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:38:13-78
-139            android:exported="true"
-139-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:39:13-36
-140            android:permission="com.google.android.c2dm.permission.SEND" >
-140-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:40:13-73
-141            <intent-filter>
-141-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:41:13-43:29
-142                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-142-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:17-81
-142-->[com.google.firebase:firebase-iid:20.1.1] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/c785bd90cedee10ee95d22c433e69cda/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:25-78
-143            </intent-filter>
-144        </receiver>
-145
-146        <provider
-146-->[com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-147            android:name="com.google.firebase.provider.FirebaseInitProvider"
-147-->[com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-148            android:authorities="io.ionic.starter.firebaseinitprovider"
-148-->[com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+114-->[com.google.firebase:firebase-messaging:20.1.2] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:37:13-37
+115            <meta-data
+115-->[com.google.firebase:firebase-messaging:20.1.2] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:38:13-40:85
+116                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+116-->[com.google.firebase:firebase-messaging:20.1.2] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:39:17-119
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.firebase:firebase-messaging:20.1.2] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/9fbada88fa325291a82eb809c2064dc7/jetified-firebase-messaging-20.1.2/AndroidManifest.xml:40:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/c9fdb49c77a6c560ace392ea2d5303c1/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+119                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+119-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/c9fdb49c77a6c560ace392ea2d5303c1/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/c9fdb49c77a6c560ace392ea2d5303c1/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+121            <meta-data
+121-->[com.google.android.gms:play-services-measurement-api:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/86099965e0825156c26d8ace6673dd46/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:30:13-32:85
+122                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+122-->[com.google.android.gms:play-services-measurement-api:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/86099965e0825156c26d8ace6673dd46/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:31:17-139
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[com.google.android.gms:play-services-measurement-api:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/86099965e0825156c26d8ace6673dd46/jetified-play-services-measurement-api-17.0.0/AndroidManifest.xml:32:17-82
+124            <meta-data
+124-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:32:13-34:85
+125                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+125-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:33:17-96
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:34:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-installations:16.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/1e98b102015e39078d965ca60768118d/jetified-firebase-installations-16.0.0/AndroidManifest.xml:17:13-19:85
+128                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+128-->[com.google.firebase:firebase-installations:16.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/1e98b102015e39078d965ca60768118d/jetified-firebase-installations-16.0.0/AndroidManifest.xml:18:17-127
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-installations:16.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/1e98b102015e39078d965ca60768118d/jetified-firebase-installations-16.0.0/AndroidManifest.xml:19:17-82
+130        </service>
+131
+132        <receiver
+132-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:37:9-44:20
+133            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+133-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:38:13-78
+134            android:exported="true"
+134-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:39:13-36
+135            android:permission="com.google.android.c2dm.permission.SEND" >
+135-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:40:13-73
+136            <intent-filter>
+136-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:41:13-43:29
+137                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+137-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:17-81
+137-->[com.google.firebase:firebase-iid:20.1.1] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/65f174b01524df0d4bd637d7360a2e28/jetified-firebase-iid-20.1.1/AndroidManifest.xml:42:25-78
+138            </intent-filter>
+139        </receiver>
+140
+141        <provider
+141-->[com.google.firebase:firebase-common:19.3.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+142            android:name="com.google.firebase.provider.FirebaseInitProvider"
+142-->[com.google.firebase:firebase-common:19.3.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+143            android:authorities="com.experiencia.boliche.firebaseinitprovider"
+143-->[com.google.firebase:firebase-common:19.3.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+144            android:exported="false"
+144-->[com.google.firebase:firebase-common:19.3.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+145            android:initOrder="100" />
+145-->[com.google.firebase:firebase-common:19.3.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/1b23a58bb1c539c2a19df1b0920c32b5/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+146
+147        <activity
+147-->[com.google.android.gms:play-services-base:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/38b6c4b545e39be84f8fef63d737cf6b/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+148            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+148-->[com.google.android.gms:play-services-base:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/38b6c4b545e39be84f8fef63d737cf6b/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
 149            android:exported="false"
-149-->[com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-150            android:initOrder="100" />
-150-->[com.google.firebase:firebase-common:19.3.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/3deb10f8139ef5717b3d54ada2a19ca4/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+149-->[com.google.android.gms:play-services-base:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/38b6c4b545e39be84f8fef63d737cf6b/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+150            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+150-->[com.google.android.gms:play-services-base:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/38b6c4b545e39be84f8fef63d737cf6b/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
 151
-152        <activity
-152-->[com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-153            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-153-->[com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-154            android:exported="false"
-154-->[com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-155            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-155-->[com.google.android.gms:play-services-base:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/2be5ef2959ea5355d833f1cf7554bfda/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-156
-157        <meta-data
-157-->[com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-158            android:name="com.google.android.gms.version"
-158-->[com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-159            android:value="@integer/google_play_services_version" />
-159-->[com.google.android.gms:play-services-basement:17.0.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/164bb505b81f338baa0db13edd04c1d1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-160
-161        <service
-161-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
-162            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-162-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
-163            android:exported="false" >
-163-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
-164            <meta-data
-164-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
-165                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-165-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
-166                android:value="cct" />
-166-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/af8b852dc9492850dfd58fa4b08b6b31/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
-167        </service>
-168        <service
-168-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
-169            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-169-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
-170            android:exported="false"
-170-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
-171            android:permission="android.permission.BIND_JOB_SERVICE" >
-171-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
-172        </service>
-173
-174        <receiver
-174-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
-175            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-175-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
-176            android:exported="false" />
-176-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/jjaramil/.gradle/caches/transforms-2/files-2.1/6ef9d023f91cb51a7dcd488e27c3d1cb/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
-177    </application>
-178
-179</manifest>
+152        <receiver
+152-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:29:9-33:20
+153            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+153-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:30:13-85
+154            android:enabled="true"
+154-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:31:13-35
+155            android:exported="false" >
+155-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:32:13-37
+156        </receiver>
+157        <receiver
+157-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:34:9-42:20
+158            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+158-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:35:13-100
+159            android:enabled="true"
+159-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:36:13-35
+160            android:exported="true"
+160-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:37:13-36
+161            android:permission="android.permission.INSTALL_PACKAGES" >
+161-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:38:13-69
+162            <intent-filter>
+162-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:39:13-41:29
+163                <action android:name="com.android.vending.INSTALL_REFERRER" />
+163-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:17-79
+163-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:40:25-76
+164            </intent-filter>
+165        </receiver>
+166
+167        <service
+167-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:44:9-47:40
+168            android:name="com.google.android.gms.measurement.AppMeasurementService"
+168-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:45:13-84
+169            android:enabled="true"
+169-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:46:13-35
+170            android:exported="false" />
+170-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:47:13-37
+171        <service
+171-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:48:9-52:72
+172            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+172-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:49:13-87
+173            android:enabled="true"
+173-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:50:13-35
+174            android:exported="false"
+174-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:51:13-37
+175            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+175-->[com.google.android.gms:play-services-measurement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/77408a5f8c43609866d79977dc3b5338/jetified-play-services-measurement-17.0.0/AndroidManifest.xml:52:13-69
+176        <activity
+176-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:29:9-33:64
+177            android:name="com.google.android.gms.ads.AdActivity"
+177-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:30:13-65
+178            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+178-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:31:13-122
+179            android:exported="false"
+179-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:32:13-37
+180            android:theme="@android:style/Theme.Translucent" />
+180-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:33:13-61
+181
+182        <provider
+182-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:35:9-39:39
+183            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+183-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:36:13-76
+184            android:authorities="com.experiencia.boliche.mobileadsinitprovider"
+184-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:37:13-73
+185            android:exported="false"
+185-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:38:13-37
+186            android:initOrder="100" />
+186-->[com.google.android.gms:play-services-ads-lite:17.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/084015e32a19dc3342a44bead5983707/jetified-play-services-ads-lite-17.2.0/AndroidManifest.xml:39:13-36
+187
+188        <meta-data
+188-->[com.google.android.gms:play-services-basement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/f720b24cc490c109d50c0a0a1e6bf186/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+189            android:name="com.google.android.gms.version"
+189-->[com.google.android.gms:play-services-basement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/f720b24cc490c109d50c0a0a1e6bf186/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+190            android:value="@integer/google_play_services_version" />
+190-->[com.google.android.gms:play-services-basement:17.0.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/f720b24cc490c109d50c0a0a1e6bf186/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+191
+192        <service
+192-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+193            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+193-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+194            android:exported="false" >
+194-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+195            <meta-data
+195-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+196                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+196-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+197                android:value="cct" />
+197-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/6b92bf4ad40bcdc58a60097256bb2331/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+198        </service>
+199        <service
+199-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+200            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+200-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+201            android:exported="false"
+201-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+202            android:permission="android.permission.BIND_JOB_SERVICE" >
+202-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+203        </service>
+204
+205        <receiver
+205-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+206            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+206-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+207            android:exported="false" />
+207-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/sebasbelaustegui/.gradle/caches/transforms-2/files-2.1/711d09d774dd8393d1b2cda417cd0cc2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+208    </application>
+209
+210</manifest>

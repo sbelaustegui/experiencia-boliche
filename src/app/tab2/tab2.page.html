@@ -17,14 +17,21 @@
     <ion-spinner></ion-spinner>
   </div>
 
-  <div class="items" *ngIf="!loading">
-    <ion-item *ngFor="let video of videos" (click)="startVideo(video.ETag)">
-      {{video.Key.split('.')[0].replace(regex, ' ')}}
-    </ion-item>
+  <ion-list class="items" *ngIf="!loading">
+    <span *ngFor="let letter of getVideoMapList()">
+      <ion-item-divider>
+        <ion-label>
+          {{letter}}
+        </ion-label>
+      </ion-item-divider>
+      <ion-item *ngFor="let video of getListFromLetter(letter)" (click)="startVideo(video.ETag, letter)">
+        <ion-label>{{video.Key.split('.')[0].replace(regex, ' ')}}</ion-label>
+      </ion-item>
+    </span>
     <ion-item>
 <!--      This item is to fix ad banner overlap-->
     </ion-item>
-  </div>
+  </ion-list>
 
   <div *ngIf="webVideo.show">
     <h2>Web</h2>

@@ -165,6 +165,11 @@
         ]
         },
       {
+          "id": "cordova-plugin-file.fileSystems",
+          "file": "plugins/cordova-plugin-file/www/fileSystems.js",
+          "pluginId": "cordova-plugin-file"
+        },
+      {
           "id": "cordova-plugin-file.isChrome",
           "file": "plugins/cordova-plugin-file/www/browser/isChrome.js",
           "pluginId": "cordova-plugin-file",
@@ -175,11 +180,6 @@
           "file": "plugins/cordova-plugin-file/www/fileSystems-roots.js",
           "pluginId": "cordova-plugin-file",
         "runs": true
-        },
-      {
-          "id": "cordova-plugin-file.fileSystems",
-          "file": "plugins/cordova-plugin-file/www/fileSystems.js",
-          "pluginId": "cordova-plugin-file"
         },
       {
           "id": "cordova-promise-polyfill.Promise",

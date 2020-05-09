@@ -18,9 +18,6 @@ export class AppComponent{
     private splashScreen: SplashScreen,
     private statusBar: StatusBar
   ) {
-    //AdMob.initialize('ca-app-pub-6326566524185956~8248523202');--> prod
-    AdMob.initialize('ca-app-pub-6326566524185956~1131137434');//--> test ios
-    //AdMob.initialize('ca-app-pub-3940256099942544~3347511713');
     this.initializeApp();
   }
 
@@ -28,6 +25,13 @@ export class AppComponent{
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
+      this.platform.ready().then(() => {
+        if (this.platform.is('ios')) {
+          AdMob.initialize('ca-app-pub-6326566524185956~1131137434');//--> test ios
+        } else if(this.platform.is('android')){
+          AdMob.initialize('ca-app-pub-6326566524185956~8248523202');
+        }
+      })
     });
   }
 
